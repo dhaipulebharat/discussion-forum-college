@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+    <title>Quora</title>
+</head>
+
+<body>
+    <div id="side-nav">
+        <a class="active" href="#" onclick="navfunction()">☰</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <h1>Quora</h1>
+        <span class="right-sidenav">
+                <form action="">
+                <input type="text"><button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;
+                <i class="fa fa-user" aria-hidden="true"></i>
+                </form>
+            </span>
+    </div>
+    <div id="body-nav">
+        <div id="nav"><br>
+            <a class="nav1" id="home-button" href="#"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;Home</a><br><br>
+            <a class="nav1" href="#"><i class="fa fa-tags" aria-hidden="true"></i>&nbsp;&nbsp;Tags</a><br><br>
+            <a class="nav1" href="#" onclick="users()"><i class="fa fa-users" aria-hidden="true"></i>&nbsp;&nbsp;Users</a><br>
+        </div>
+        <div id="nav-content1">
+            <br><br><br>
+            <h2>Ask a question...</h2>
+            <div>
+                <form action="">
+                    <textarea name="" id="" cols="145" rows="20" placeholder="Write a question..."></textarea> Select appropriate tags for the question.<br><br>
+                    <input type="checkbox" id="cse" name="cse" value="CSE">
+                    <label for="cse">CSE</label>&nbsp;
+                    <input type="checkbox" id="ece" name="ece" value="ECE">
+                    <label for="ece">ECE</label>&nbsp;
+                    <input type="checkbox" id="eee" name="eee" value="EEE">
+                    <label for="eee">EEE</label>&nbsp;
+                    <input type="checkbox" id="me" name="me" value="ME">
+                    <label for="me">ME</label>&nbsp;
+                    <input type="checkbox" id="civ" name="civ" value="CIV">
+                    <label for="civ">CIV</label>&nbsp;
+                    <input type="checkbox" id="cse-related" name="cse-related" value="CSE-RELATED">
+                    <label for="cse-related">CSE related</label>&nbsp;
+                    <input type="checkbox" id="events" name="events" value="EVENTS">
+                    <label for="events">EVENTS</label>&nbsp;
+                    <input type="checkbox" id="sports" name="sports" value="SPORTS">
+                    <label for="sports">SPORTS</label>&nbsp;
+                    <input type="checkbox" id="academics" name="academics" value="ACADEMICS">
+                    <label for="academics">ACADEMICS</label>&nbsp;
+                    <input type="checkbox" id="fee" name="fee" value="FEE">
+                    <label for="fee">FEE</label>&nbsp;
+                    <input type="checkbox" id="placements" name="placements" value="PLACEMENTS">
+                    <label for="placements">PLACEMENTS</label>&nbsp;
+                    <input type="checkbox" id="college" name="college" value="COLLEGE">
+                    <label for="college">COLLEGE</label>
+                    <br><br><br>
+                    <button class="button-post" type="submit">Post</button>&nbsp;&nbsp;&nbsp;
+                    <button class="button-post" type="reset">Reset</button>
+                </form>
+            </div>
+        </div>
+        <div id="nav-content3"><br><br>
+            <h2>Q. major versions and grown to make thousands of icons easy to use - wherever and however you are working. Since 2012, Font Awesome has spanned 6 major versions and grown to make thousands of icons easy to use - wherever and however you are
+                working. Since 2012, Font Awesome has spanned 6 major versions and grown to make thousands of icons easy to use - wherever and however you are working.Hi Since 2012, Font Awesome has spanned 6 major versions and grown to make thousands
+                oand grown to make thousands of icons easy to use</h2>
+            Since 2012
+        </div>
+
+
+
+
+        <div id="nav-content4">Hi Since 2012</div>
+        <div id="nav-content2">Hi Since 2012, Font Awesome has spanned 6 major versions and grown to make thousands of icons easy to use - wherever and however you are working. Since 2012, Font Awesome has spanned 6 major versions and grown to make thousands of icons easy to
+            use - wherever and however you are working. Since 2012, Font Awesome has spanned 6 major versions and grown to make thousands of icons easy to use - wherever and however you are working.Hi Since 2012, Font Awesome has spanned 6 major versions
+            and grown to make thousands oand grown to make thousands of icons easy to use - wherever and however you are working. Since 2012, Font Awesome has spanned 6 major versions and grown to make thousands of icons easy to use - wherever and however
+            you are working. Since 2012, Font Awesome has spanned 6 major versions and grown to make thousands of icons easy to use - wherever and however you are working.Hi Since 2012, Font Awesome has spanned 6 major versions and grown to makese - wherever
+            and however you are working. Since 2012, Font Awesome has spanned 6 major versions and grown to make thousands of icons easy to use - wherever and however you are working. Since 2012, Font Awesome has spanned 6 major versions and grown to
+            make thousands of icons easy to use - wherever and however you are working.Hi Since 2012, Font Awesome has spanned 6 major versions and grown to make thousands of icons easy to use - wherever and however you are working. Since 2012, Font Awesome
+            has spanned 6 major versions and grown to make thousands of icons easy to use - wherever and however you are working. Since 2012, Font Awesome has spanned 6 major versions and grown to make thousands of icons easy to use - wherever and however
+            you are working.
+        </div>
+        <div id="nav-right"><br>
+            <a href="#" onclick="ask()"><i class="fa fa-question" aria-hidden="true"></i>&nbsp;&nbsp;Ask</a><br><br>
+            <a href="#" onclick="answer()"><i class="fa fa-flask" aria-hidden="true"></i>&nbsp;&nbsp;Answer</a>
+            <br><br> ...
+            <br></div>
+    </div>
+    <script>
+        var x = document.getElementById("nav");
+        var y = document.getElementById("nav-content1");
+        var z = document.getElementById("nav-content2");
+        var i = document.getElementById("nav-content3");
+
+        function navfunction() {
+            if (x.style.display == "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function ask() {
+            z.style.display = "none";
+            y.style.display = "block";
+        }
+
+        function answer() {
+            y.style.display = "none";
+            i.style.display = "block";
+        }
+
+        function users() {
+            var y = document.getElementById("nav-content1");
+            var z = document.getElementById("nav-content2");
+            z.style.display = "block";
+            y.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
